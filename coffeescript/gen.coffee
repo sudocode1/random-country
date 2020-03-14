@@ -1,4 +1,5 @@
 source = document.getElementById("random")
+reg = document.getElementById("reg")
 
 randomId = [
     # credit to nationstates
@@ -286,7 +287,17 @@ randomCountry = [
     "Zimbabwe"
 ]
 
-
+randomReg = [
+    "Full Democracy (9-10 points)",
+    "Full Democracy (8-9 points)",
+    "Flawed Democracy (7-8 points)",
+    "Flawed Democracy (6-7 points)",
+    "Hybrid regime (5-6 points)",
+    "Hybrid regime (4-5 points)",
+    "Authoritarian (3-4 points)",
+    "Authoritarian (2-3 points)",
+    "Authoritarian (0-2 points)"
+]
 
 
 
@@ -294,5 +305,7 @@ rsp = "#{randomId[Math.floor(Math.random() * randomId.length)]}
  #{randomArea[Math.floor(Math.random() * randomArea.length)]}
  #{randomCountry[Math.floor(Math.random() * randomCountry.length)]}"
 
+regime = "#{randomReg[Math.floor(Math.random() * randomReg.length)]}"
 
 source.innerHTML = "#{rsp}"
+reg.innerHTML = "Regime time: #{regime}"
