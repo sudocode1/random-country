@@ -324,6 +324,89 @@ religionId = "#{randomReli[Math.floor(Math.random() * randomReli.length)]}"
 
 id.innerHTML = "Id: "
 
+if randomIdId == "The Democratic People's Republic Of"
+    id.insertAdjacentHTML('beforeend', "1-")
+else if randomIdId == "The Kingdom of"
+    id.insertAdjacentHTML('beforeend', "2-")
+else if randomIdId == "The Republic of"
+    id.insertAdjacentHTML('beforeend', "3-")
+else if randomIdId == "The Empire of"
+    id.insertAdjacentHTML('beforeend', "4-")
+else if randomIdId == "The Commonwealth of"
+    id.insertAdjacentHTML('beforeend', "5-")
+else if randomIdId == "The Federation of"
+    id.insertAdjacentHTML('beforeend', "6-")
+else if randomIdId == "The Colony of"
+    id.insertAdjacentHTML('beforeend', "7-")
+else if randomIdId == "The Principality of"
+    id.insertAdjacentHTML('beforeend', "8-")
+else if randomIdId == "The Protectorate of"
+    id.insertAdjacentHTML('beforeend', "9-")
+else if randomIdId == "The United States of"
+    id.insertAdjacentHTML('beforeend', "10-")
+else if randomIdId == "The United Kingdom of"
+    id.insertAdjacentHTML('beforeend', "11-")
+else if randomIdId == "The Democratic Republic of"
+    id.insertAdjacentHTML('beforeend', "12-")
+else if randomIdId == "The Confederacy of"
+    id.insertAdjacentHTML('beforeend', "13-")
+else if randomIdId == "The Dominion of"
+    id.insertAdjacentHTML('beforeend', "14-")
+else if randomIdId == "The Sultanate of"
+    id.insertAdjacentHTML('beforeend', "15-")
+else if randomIdId == "The Holy Empire of"
+    id.insertAdjacentHTML('beforeend', "16-")
+else if randomIdId == "The Theocracy of"
+    id.insertAdjacentHTML('beforeend', "17-")
+else if randomIdId == "The Most Serene Republic of"
+    id.insertAdjacentHTML('beforeend', "18-")
+else if randomIdId == "The United Socialist States of"
+    id.insertAdjacentHTML('beforeend', "19-")
+else if randomIdId == "The Democratic States of"
+    id.insertAdjacentHTML('beforeend', "20-")
+else if randomIdId == "The Allied States of"
+    id.insertAdjacentHTML('beforeend', "21-")
+else if randomIdId == "The Queendom of"
+    id.insertAdjacentHTML('beforeend', "22-")
+else if randomIdId == "The Fiefdom of"
+    id.insertAdjacentHTML('beforeend', "23-")
+else if randomIdId == "The Constitutional Monarchy of"
+    id.insertAdjacentHTML('beforeend', "24-")
+else if randomIdId == "The Dictatorship of"
+    id.insertAdjacentHTML('beforeend', "25-")
+else if randomIdId == "The United States of" # hi
+    id.insertAdjacentHTML('beforeend', "26-")
+else if randomIdId == "The Matriarchy of"
+    id.insertAdjacentHTML('beforeend', "27-")
+else if randomIdId == "The Emirate of"
+    id.insertAdjacentHTML('beforeend', "28-")
+else if randomIdId == "The Grand Duchy of"
+    id.insertAdjacentHTML('beforeend', "29-")
+else if randomIdId == "The Free Land of"
+    id.insertAdjacentHTML('beforeend', "30-")
+else if randomIdId == "The Community of"
+    id.insertAdjacentHTML('beforeend', "31-")
+else if randomIdId == "The Disputed Territories of"
+    id.insertAdjacentHTML('beforeend', "32-")
+else if randomIdId == "The Jingoistic States of"
+    id.insertAdjacentHTML('beforeend', "33-")
+else if randomIdId == "The Armed Republic of"
+    id.insertAdjacentHTML('beforeend', "34-")
+else if randomIdId == "The Nomadic Peoples of"
+    id.insertAdjacentHTML('beforeend', "35-")
+else if randomIdId == "The Oppressed Peoples of"
+    id.insertAdjacentHTML('beforeend', "36-")
+else if randomIdId == "The Borderlands of"
+    id.insertAdjacentHTML('beforeend', "37-")
+else if randomIdId == "The Rogue Nation of"
+    id.insertAdjacentHTML('beforeend', "38-")
+else if randomIdId == "The Incorporated States of"
+    id.insertAdjacentHTML('beforeend', "39-")
+else if randomIdId == "The Federal Republic of"
+    id.insertAdjacentHTML('beforeend', "40-")
+else
+    id.insertAdjacentHTML('beforeend', "none-")
+
 if randomAreaId == "North"
     id.insertAdjacentHTML('beforeend', "1-")
 else if randomAreaId == "South"
