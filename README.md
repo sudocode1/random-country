@@ -15,4 +15,4 @@ randomOutput = "#{random[Math.floor(Math.random() * random.length)]}"
 ```
 This will output a random string from the array "random"
 
-https://dev.azure.com/ms/Terminal/_apis/build/status/random-country?branchName=master
+
