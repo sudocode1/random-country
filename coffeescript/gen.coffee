@@ -1,5 +1,6 @@
 source = document.getElementById("random")
 reg = document.getElementById("reg")
+rel = document.getElementById("religion")
 
 randomId = [
     # credit to nationstates
@@ -299,6 +300,15 @@ randomReg = [
     "Authoritarian (0-2 points)"
 ]
 
+randomReli = [
+    "Christian",
+    "Muslim",
+    "Atheist",
+    "Hindu",
+    "Buddhist",
+    "Jewish",
+    "Sikh"
+]
 
 
 rsp = "#{randomId[Math.floor(Math.random() * randomId.length)]}
@@ -306,6 +316,8 @@ rsp = "#{randomId[Math.floor(Math.random() * randomId.length)]}
  #{randomCountry[Math.floor(Math.random() * randomCountry.length)]}"
 
 regime = "#{randomReg[Math.floor(Math.random() * randomReg.length)]}"
+religion = "#{randomReli[Math.floor(Math.random() * randomReli.length)]}"
 
 source.innerHTML = "#{rsp}"
 reg.innerHTML = "Regime time: #{regime}"
+rel.innerHTML = "Majority religion: #{religion}"
