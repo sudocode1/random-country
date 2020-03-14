@@ -374,7 +374,7 @@ else if randomIdId == "The Constitutional Monarchy of"
     id.insertAdjacentHTML('beforeend', "24-")
 else if randomIdId == "The Dictatorship of"
     id.insertAdjacentHTML('beforeend', "25-")
-else if randomIdId == "The United States of" # hi
+else if randomIdId == "The United States of"
     id.insertAdjacentHTML('beforeend', "26-")
 else if randomIdId == "The Matriarchy of"
     id.insertAdjacentHTML('beforeend', "27-")
