@@ -345,8 +345,10 @@ else if randomCountryId == "Algeria"
     id.insertAdjacentHTML('beforeend', "3-")
 else if randomCountryId == "Andorra"
     id.insertAdjacentHTML('beforeend', "4-")
+else if randomCountryId == "Angola"
+    id.insertAdjacentHTML('beforeend', '5-')
 else
-    id.insertAdjacentHTML('beforeend', 'none-')
+    id.insertAdjacentHTML('beforeend', "none-")
 
 
 if regimeId == "Full Democracy (9-10 points)"
