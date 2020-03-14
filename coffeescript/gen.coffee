@@ -274,9 +274,11 @@ randomCountry = [
 
 
 
-randomId_rsp = randomId[Math.floor(Math.random() * randomId.length)]
-randomArea_rsp = randomArea[Math.floor(Math.random() * randomArea.length)]
-randomCountry_rsp = randomCountry[Math.floor(Math.random() * randomCountry.length)]
 
 
-source.innerHTML = "#{randomId_rsp} #{randomArea_rsp} #{randomCountry_rsp}"
+rsp = "#{randomId[Math.floor(Math.random() * randomId.length)]}
+ #{randomArea[Math.floor(Math.random() * randomArea.length)]}
+ #{randomCountry[Math.floor(Math.random() * randomCountry.length)]}"
+
+
+source.innerHTML = "#{rsp}"
