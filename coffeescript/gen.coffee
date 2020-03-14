@@ -1,6 +1,7 @@
 source = document.getElementById("random")
 reg = document.getElementById("reg")
 rel = document.getElementById("religion")
+id = document.getElementById("id")
 
 randomId = [
     # credit to nationstates
@@ -311,13 +312,78 @@ randomReli = [
 ]
 
 
-rsp = "#{randomId[Math.floor(Math.random() * randomId.length)]}
- #{randomArea[Math.floor(Math.random() * randomArea.length)]}
- #{randomCountry[Math.floor(Math.random() * randomCountry.length)]}"
 
-regime = "#{randomReg[Math.floor(Math.random() * randomReg.length)]}"
-religion = "#{randomReli[Math.floor(Math.random() * randomReli.length)]}"
 
+
+
+randomIdId = "#{randomId[Math.floor(Math.random() * randomId.length)]}"
+randomAreaId = "#{randomArea[Math.floor(Math.random() * randomArea.length)]}"
+randomCountryId = "#{randomCountry[Math.floor(Math.random() * randomCountry.length)]}"
+regimeId = "#{randomReg[Math.floor(Math.random() * randomReg.length)]}"
+religionId = "#{randomReli[Math.floor(Math.random() * randomReli.length)]}"
+
+id.innerHTML = "Id: "
+
+if randomAreaId == "North"
+    id.insertAdjacentHTML('beforeend', "1-")
+else if randomAreaId == "South"
+    id.insertAdjacentHTML('beforeend', "2-")
+else if randomAreaId == "East"
+    id.insertAdjacentHTML('beforeend', "3-")
+else if randomAreaId == "West"
+    id.insertAdjacentHTML('beforeend', "4-")
+else if randomAreaId == "Central"
+    id.insertAdjacentHTML('beforeend', "5-")
+else if randomAreaId == ""
+    id.insertAdjacentHTML('beforeend', "6-")
+
+if randomCountryId == "Afghanistan"
+    id.insertAdjacentHTML('beforeend', "1-")
+else if randomCountryId == "Albania"
+    id.insertAdjacentHTML('beforeend', "2-")
+else if randomCountryId == "Algeria"
+    id.insertAdjacentHTML('beforeend', "3-")
+else if randomCountryId == "Andorra"
+    id.insertAdjacentHTML('beforeend', "4-")
+else
+    id.insertAdjacentHTML('beforeend', 'none-')
+
+
+if regimeId == "Full Democracy (9-10 points)"
+    id.insertAdjacentHTML('beforeend', "1-")
+else if regimeId == "Full Democracy (8-9 points)"
+    id.insertAdjacentHTML('beforeend', "2-")
+else if regimeId == "Flawed Democracy (7-8 points)"
+    id.insertAdjacentHTML('beforeend', "3-")
+else if regimeId == "Flawed Democracy (6-7 points)"
+    id.insertAdjacentHTML('beforeend', "4-")
+else if regimeId == "Hybrid regime (5-6 points)"
+    id.insertAdjacentHTML('beforeend', "5-")
+else if regimeId == "Hybrid regime (4-5 points)"
+    id.insertAdjacentHTML('beforeend', "6-")
+else if regimeId == "Authoritarian (3-4 points)"
+    id.insertAdjacentHTML('beforeend', "7-")
+else if regimeId == "Authoritarian (2-3 points)"
+    id.insertAdjacentHTML('beforeend', "8-")
+else if regimeId == "Authoritarian (0-2 points)"
+    id.insertAdjacentHTML('beforeend', "9-")
+
+if religionId == "Christian"
+    id.insertAdjacentHTML('beforeend', "1")
+else if religionId == "Muslim"
+    id.insertAdjacentHTML('beforeend', "2")
+else if religionId == "Atheist"
+    id.insertAdjacentHTML('beforeend', "3")
+else if religionId == "Hindu"
+    id.insertAdjacentHTML('beforeend', "4")
+else if religionId == "Buddhist"
+    id.insertAdjacentHTML('beforeend', "5")
+else if religionId == "Jewish"
+    id.insertAdjacentHTML('beforeend', "6")
+else if religionId == "Sikh"
+    id.insertAdjacentHTML('beforeend', "7")
+
+rsp = "#{randomIdId} #{randomAreaId} #{randomCountryId}"
 source.innerHTML = "#{rsp}"
-reg.innerHTML = "Regime time: #{regime}"
-rel.innerHTML = "Majority religion: #{religion}"
+reg.innerHTML = "Regime type: #{regimeId}"
+rel.innerHTML = "Majority religion: #{religionId}"
