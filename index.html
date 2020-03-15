@@ -1,10 +1,11 @@
 <html>
     <head>
-        <title>Random Title Generator</title>
+        <title>Random Country Name Generator</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <h1>Random Country Name Generator</h1>
+        <h2>yes, it was moved to justgone.uk but i've temporarily had to do a redirect for performance reasons.<br />
         <script type="text/javascript" src="coffeescript/coffeescript.js"></script>
         <script src="coffeescript/gen.coffee" type="text/coffeescript"></script>
 
@@ -12,7 +13,18 @@
         <h2 style="font-family: Arial, Helvetica, sans-serif;" id="random"></h2> 
         <h3 style="font-family: Arial, Helvetica, sans-serif" id="reg"></h3> 
         <h3 style="font-family: Arial, Helvetica, sans-serif" id="religion"></h3> 
-        <p>Ideologies courtesy of <a href="https://www.nationstates.net">NationStates,</a> Country names courtesy of <a href="https://history.state.gov">history.state.gov</a> and Regime time courtesy of <a href="https://en.wikipedia.org/wiki/Democracy_Index">Wikipedia Democracy Index</a></p>
+        <h3 style="font-family: Arial, Helvetica, sans-serif" id="id"></h3> 
+        <p>Id Index: <br />
+            At the moment, IDs are formatted as IDEOLOGY-AREA-COUNTRY-REGIME-RELIGION <br />
+            IDEOLOGY will output 1-40 depending upon the ideology.<br />
+            AREA meaning "North", "South", "East", "West", "Central" or "". <br />
+            COUNTRY will currently only output as 1 to 5, otherwise as none, as I havent added all 232 country IDs yet. <br />
+            REGIME will output as 1 to 9, depending on the regime type and then the points. <br />
+            RELIGION will output as 1 to 7, depending on the religion type. <br />
+            Decoding tutorial once I finish it
+        </p>
+        <p>Ideologies courtesy of <a href="https://www.nationstates.net">NationStates,</a> Country names courtesy of <a href="https://history.state.gov">history.state.gov</a> and Regime time courtesy of <a href="https://en.wikipedia.org/wiki/Democracy_Index">Wikipedia Democracy Index</a></p> <br />
+        <h3>please help me with my terrible code on <a href="https://github.com/sudocode1/random-country">github</a></h3>
         <A style="font-family: Arial, Helvetica, sans-serif;" HREF="javascript:history.go(0)">Next</A>
     </body>
 </html>
